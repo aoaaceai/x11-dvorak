@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = xkeyboard-config
+
+[Action]
+Description = Restoring the dvorak layout...
+Exec = /usr/bin/cp /usr/share/x11-dvorak/us /usr/share/X11/xkb/symbols/
+When = PostTransaction
